@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="">
+    <meta name="keywords" content="thema bootstrap template, thema admin, bootstrap, admin template, bootstrap admin">
+
+    <meta name="author" content="LanceCoder">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="">
+    <title>Thema Admin Boostrap Template</title>
+
+    <!-- Start Global plugin css -->
+    <link href="../../../assets/css/global-plugins.css" rel="stylesheet">
+    <link href="../../../assets/vendors/jquery-icheck/skins/all.css" rel="stylesheet" />
+    <!-- <link href="../../../assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/css/bootstrap-reset.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" /> -->
+    <!-- <link href="../../../assets/vendors/pe-icon-7-stroke/css/helper.css" rel="stylesheet"/> -->
+    <!-- <link href="../../../assets/vendors/jquery-notific8/jquery.notific8.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/line-icons/line-icons.css" rel="stylesheet" /> -->
+    <!-- <link href="../../../assets/vendors/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/dropdowns-enhancement/css/dropdowns-enhancement.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/hover/hover.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/animate/animate.css" rel="stylesheet"> -->
+    <!-- <link href="../../../assets/vendors/tooltipster/css/tooltipster.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../../../assets/vendors/tooltipster/css/themes/tooltipster-light.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../../../assets/vendors/tooltipster/css/themes/tooltipster-noir.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../../../assets/vendors/tooltipster/css/themes/tooltipster-punk.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../../../assets/vendors/tooltipster/css/themes/tooltipster-shadow.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet" /> -->
+    <!-- End Global plugin css -->
+
+
+    <link href="../../../assets/vendors/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/vendors/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/vendors/select2/select2.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="../../../assets/css/theme.css" rel="stylesheet">
+    <link href="../../../assets/css/style-responsive.css" rel="stylesheet" />
+    <link href="../../../assets/css/class-helpers.css" rel="stylesheet" />
+
+    <!--Color schemes-->
+    <link href="../../../assets/css/colors/green.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/turquoise.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/blue.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/amethyst.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/cloud.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/sun-flower.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/carrot.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/alizarin.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/concrete.css" rel="stylesheet">
+    <link href="../../../assets/css/colors/wet-asphalt.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link href="../../../assets/fonts/Indie-Flower/indie-flower.css" rel="stylesheet" />
+    <link href="../../../assets/fonts/Open-Sans/open-sans.css?family=Open+Sans:300,400,700" rel="stylesheet" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Thema Color Schemes
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+* Just add the attribute value to the attribute ID in <body> element
+* List of color scheme values that supported to this theme
+    - default-scheme - the default is green color
+    - alizarin-scheme
+    - amethyst-scheme
+    - blue-scheme
+    - carrot-scheme
+    - cloud-scheme
+    - concrete-scheme
+    - sun-flower-scheme
+    - turquoise-scheme
+    - wet-asphalt-scheme
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Thema Layout Options
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+* Lists of layout options just follow the instructions if you want to use this feature
+    > Boxed Page
+        - Just add class "fixed-width-unfixed-header" in <body> element 
+        - and add class "unfixed-header" also in  <div class="leftside-navigation"> just search "leftside-navigation"
+        - and add class also "unfixed-header" to the <section id="main-content"> element just search it
+        
+    > Boxed Page + Fixed Header
+        - Just add class "fixed-width" in <body> element
+        - and add class also "boxed-page-fixed-header" to the <section id="main-content"> element just search it
+
+    > Boxed Page + No sidebar
+        - Just add class "fixed-width-unfixed-header no-sidebar" in <body> element 
+        - and add class also "unfixed-header merge-left" to the <section id="main-content"> element just search it
+    
+    > Boxed Page + No sidebar + Fixed header
+        - Just add class "fixed-width no-sidebar" in <body> element
+        - and add class also "merge-left" to the <section id="main-content"> element just search it
+
+    > Full width + Unfixed header
+        - Just add class "full-content-unfixed-header" in <body> element
+        - and add class also "merge-left" to the <section id="main-content"> element just search it 
+    
+    > Right Sidebar
+        - Just follow the sample page
+        - the important to do is replace "<section id="main-content">" to "<section id="main-content-right">"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<body id="default-scheme">
+
+    <!--======== Start Style Switcher ========-->
+    <i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+    <div class="style-switcher">
+        <div class="style-swticher-header">
+            <div class="style-switcher-heading fg-white">Color Switcher</div>
+            <div class="theme-close"><i class="icon-close"></i></div>
+        </div>
+
+        <div class="style-swticher-body">
+            <ul class="list-unstyled">
+                <li class="theme-default theme-active" data-style="default"></li>
+                <li class="theme-turquoise" data-style="turquoise"></li>
+                <li class="theme-blue" data-style="blue"></li>
+                <li class="theme-amethyst" data-style="amethyst"></li>
+                <li class="theme-cloud" data-style="cloud"></li>
+                <li class="theme-sun-flower" data-style="sun-flower"></li>
+                <li class="theme-carrot" data-style="carrot"></li>
+                <li class="theme-alizarin" data-style="alizarin"></li>
+                <li class="theme-concrete" data-style="concrete"></li>
+                <li class="theme-wet-ashphalt" data-style="wet-ashphalt"></li>
+            </ul>
+        </div>
+    </div>
+    <!--/style-switcher-->
+    <!--======== End Style Switcher ========-->
+
+    <section id="container">
+
+        <!--header start-->
+
+        <header class="header fixed-top clearfix">
+                <div class="brand">
+    
+                    <a href="index.html" class="logo">
+                        Bernong Shops
+                    </a>
+    
+                </div>
+    
+                <div class="top-nav">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="search-box">
+                            <input type="text" class="form-control search" placeholder=" Search">
+                        </li>
+    
+                        <li role="presentation" class="dropdown">
+                            <a href="IndexUC.html">
+                                <span class="icon-basket" style="font-size:22.9px;"></span>
+    
+                            </a>
+    
+                        </li>
+                    </ul>
+    
+    
+                    <ul class="nav navbar-nav navbar-right">
+    
+    
+                        <li role="presentation" class="dropdown">
+                            <a href="https://es-la.facebook.com/pg/tiendabernong/photos/">
+                                <span class="icon-social-facebook" style="font-size:22.9px;"></span>
+    
+                            </a>
+    
+                        </li>
+                        <li role="presentation" class="dropdown">
+                            <a href="https://twitter.com/bernongshop" class="dropdown-toggle info-number"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <span class="icon-social-twitter" style="font-size:22.9px;"></span>
+    
+                            </a>
+    
+                        </li>
+                        <li role="presentation" class="dropdown">
+                            <a href="https://www.instagram.com/bernongshop/?hl=es-la" class="dropdown-toggle info-number"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <span class="icon-social-instagram" style="font-size:22.9px;"></span>
+    
+                            </a>
+    
+                        </li>
+    
+                        <li class="dropdown">
+                                <a href="javascript:void(0);" class="user-profile dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="Imagenes/AvatarNuñez.jpg" alt="image">nuñes
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu animated fadeInUp pull-right">
+                                    <li>
+                                        <a href="javascript:void(0);" class="hvr-bounce-to-right"> perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="hvr-bounce-to-right">
+                                            <span class="badge bg-red pull-right">50%</span>
+                                            <span>configuraciones</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="hvr-bounce-to-right">Ayuda</a>
+                                    </li>
+                                    <li><a href="versions/html/app-pages/page-login-2.html" class="hvr-bounce-to-right"><i
+                                                class=" icon-login pull-right"></i> cerrrar sesión</a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                    </ul>
+    
+                </div>
+    
+    
+                <div class="row" style="margin-top: 9px">
+    
+                    <div class="col-10 col-lg-11 FondoAux" style="text-align: right">
+    
+                      
+                    <a href="IndexUM.html">  <input type="button" value="Masculino"          class="btn-lg"></a>
+                    <a href="IndexUF.html">  <input type="button" value="Femenina"           class="btn-lg"></a>
+                    <a href="IndexUA.html">  <input type="button" value="Accesorios"         class="btn-lg"></a>
+                    <a href="IndexUMc.html"> <input type="button" value="Marcas"             class="btn-lg"></a>
+                    <a href="IndexUMc.html">  <input type="button" value="PROMOCIONES"        class="btn-lg" ></a>
+                    <a href="IndexUC.html">  <input type="button" value="Carrito de compras" class="btn-lg"></a>
+                    </div>
+    
+                </div>
+            </header>
+        <aside>
+            <div id="sidebar" class="nav-collapse md-box-shadowed">
+                <!-- sidebar menu start-->
+
+
+                <li class="sidebar-profile">
+
+
+                    <div class="profile-main">
+                        <p class="text-right profile-options"><i
+                                class="profile-options-open icon-options-vertical fa-2x"></i></p>
+                        <p class="image">
+                            <img alt="image" src="Imagenes/Logos/bernongshop.jpg" width="240">
+                        </p>
+                    </div>
+
+                </li>
+
+
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--main content start-->
+        <section id="main-content">
+
+            <section class="wrapper">
+
+                <!--======== Grid Menu Start ========-->
+                <div id="grid-menu">
+                    <div class="color-overlay grid-menu-overlay">
+                        <div class="grid-icon-wrap grid-icon-effect-8">
+                            <a href="#" class="grid-icon icon-envelope font-size-50 turquoise"></a>
+                            <a href="#" class="grid-icon icon-user font-size-50 teal"></a>
+                            <a href="#" class="grid-icon icon-support font-size-50 peter-river"></a>
+                            <a href="#" class="grid-icon icon-settings font-size-50 light-blue"></a>
+                            <a href="#" class="grid-icon icon-picture font-size-50 orange"></a>
+                            <a href="#" class="grid-icon icon-camrecorder font-size-50 light-orange"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--======== Grid Menu End ========-->
+
+                <!--======== Page Title and Breadcrumbs Start ========-->
+                <div class="top-page-header">
+
+
+                    <div class="right-menu pull-right">
+
+                    </div>
+
+                    <div class="pull-right toggle-right-sidebar">
+
+                    </div>
+
+                </div>
+                <!--======== Page Title and Breadcrumbs End ========-->
+
+                <!--======== START ECOMMERCE ========-->
+                <div class="row">
+
+                    <div class="col-md-12">
+
+
+                        <div class="page-ecommerce">
+
+
+                            <div class="row">
+
+                                <div class="col-md-8">
+                                    <h2><i class="fa fa-shopping-cart"></i> Pagar</h2>
+                                    <div class="c_panel ecommerce-content bg-white padding-25">
+
+
+                                        <!--WIZARD START-->
+                                        <div id="ecommerce-wizard">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active">
+                                                    <a href="#billing_info" data-toggle="tab">
+                                                        <i class="fa fa-user"></i> Dtos de facturacion
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#shipping_information" data-toggle="tab">
+                                                        <i class="fa fa-truck"></i> informacion de envio
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#shipping_method" data-toggle="tab">
+                                                        <i class="fa fa-exchange"></i> metodo de envio
+                                                    </a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#checkout_payment" data-toggle="tab">
+                                                        <i class="fa fa-cc-visa"></i> Paypagoment</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#order_review" data-toggle="tab">
+                                                        <i class="fa fa-check"></i> revision de pedido
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+
+                                            <div class="progress progress-sm m-t-sm margin-top-15">
+                                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 0%">
+                                                </div>
+                                            </div>
+                                            <form id="checkout-wizard-form" class="validator">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active fade in" id="billing_info">
+                                                        <div class="row margin-bottom-10">
+                                                            <div class="col-md-12">
+                                                                <h4>Complete su información básica para la facturación
+                                                                    del artículo</h4>
+                                                                <hr />
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-sm-6">
+                                                                        <div class="form-group required">
+                                                                            <label>nombres <sup>*</sup> </label>
+                                                                            <input required type="text"
+                                                                                class="form-control firstName"
+                                                                                name="firstName" placeholder="nombres">
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>apellidos <sup>*</sup> </label>
+                                                                            <input required type="text"
+                                                                                class="form-control lastName"
+                                                                                name="lastName" placeholder="apellidos">
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>Email <sup>*</sup></label>
+                                                                            <input required type="email"
+                                                                                class="form-control email" name="email"
+                                                                                placeholder="Email">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>empresa </label>
+                                                                            <input type="text"
+                                                                                class="form-control company"
+                                                                                placeholder="Company">
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>direccion <sup>*</sup> </label>
+                                                                            <input required type="text"
+                                                                                class="form-control address1"
+                                                                                placeholder="Address">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Address (Line 2) </label>
+                                                                            <input type="text"
+                                                                                class="form-control address_2"
+                                                                                placeholder="Address">
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>ciudad <sup>*</sup> </label>
+                                                                            <input required type="text"
+                                                                                class="form-control city" name="city"
+                                                                                placeholder="City">
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>estado <sup>*</sup> </label>
+                                                                            <select class="form-control state_info"
+                                                                                required name="state_info">
+                                                                                <option value="">Choose</option>
+                                                                                <option value="1">Alabama</option>
+                                                                                <option value="2">Alaska</option>
+                                                                                <option value="3">Arizona</option>
+                                                                                <option value="4">Arkansas</option>
+                                                                                <option value="5">California</option>
+                                                                                <option value="6">Colorado</option>
+                                                                                <option value="7">Connecticut</option>
+                                                                                <option value="8">Delaware</option>
+                                                                                <option value="53">District of Columbia
+                                                                                </option>
+                                                                                <option value="9">Florida</option>
+                                                                                <option value="10">Georgia</option>
+                                                                                <option value="11">Hawaii</option>
+                                                                                <option value="12">Idaho</option>
+                                                                                <option value="13">Illinois</option>
+                                                                                <option value="14">Indiana</option>
+                                                                                <option value="15">Iowa</option>
+                                                                                <option value="16">Kansas</option>
+                                                                                <option value="17">Kentucky</option>
+                                                                                <option value="18">Louisiana</option>
+                                                                                <option value="19">Maine</option>
+                                                                                <option value="20">Maryland</option>
+                                                                                <option value="21">Massachusetts
+                                                                                </option>
+                                                                                <option value="22">Michigan</option>
+                                                                                <option value="23">Minnesota</option>
+                                                                                <option value="24">Mississippi</option>
+                                                                                <option value="25">Missouri</option>
+                                                                                <option value="26">Montana</option>
+                                                                                <option value="27">Nebraska</option>
+                                                                                <option value="28">Nevada</option>
+                                                                                <option value="29">New Hampshire
+                                                                                </option>
+                                                                                <option value="30">New Jersey</option>
+                                                                                <option value="31">New Mexico</option>
+                                                                                <option value="32">New York</option>
+                                                                                <option value="33">North Carolina
+                                                                                </option>
+                                                                                <option value="34">North Dakota</option>
+                                                                                <option value="35">Ohio</option>
+                                                                                <option value="36">Oklahoma</option>
+                                                                                <option value="37">Oregon</option>
+                                                                                <option value="38">Pennsylvania</option>
+                                                                                <option value="51">Puerto Rico</option>
+                                                                                <option value="39">Rhode Island</option>
+                                                                                <option value="40">South Carolina
+                                                                                </option>
+                                                                                <option value="41">South Dakota</option>
+                                                                                <option value="42">Tennessee</option>
+                                                                                <option value="43">Texas</option>
+                                                                                <option value="52">US Virgin Islands
+                                                                                </option>
+                                                                                <option value="44">Utah</option>
+                                                                                <option value="45">Vermont</option>
+                                                                                <option value="46">Virginia</option>
+                                                                                <option value="47">Washington</option>
+                                                                                <option value="48">West Virginia
+                                                                                </option>
+                                                                                <option value="49">Wisconsin</option>
+                                                                                <option value="50">Wyoming</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--col-xs-12-->
+                                                                    <div class="col-xs-12 col-sm-6">
+                                                                        <div class="form-group required">
+                                                                            <label>Zip / codigo posta <sup>*</sup>
+                                                                            </label>
+                                                                            <input required type="number"
+                                                                                class="form-control zip" name="zip"
+                                                                                placeholder="Zip / Postal Code">
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>pais <sup>*</sup> </label>
+                                                                            <select class="form-control country_info"
+                                                                                required aria-required="true"
+                                                                                name="country_info">
+                                                                                <option value="">Choose</option>
+                                                                                <option value="38">Algeria</option>
+                                                                                <option value="39">American Samoa
+                                                                                </option>
+                                                                                <option value="40">Andorra</option>
+                                                                                <option value="41">Angola</option>
+                                                                                <option value="42">Anguilla</option>
+                                                                                <option value="43">Antigua and Barbuda
+                                                                                </option>
+                                                                                <option value="44">Argentina</option>
+                                                                                <option value="45">Armenia</option>
+                                                                                <option value="46">Aruba</option>
+                                                                                <option value="24">Australia</option>
+                                                                                <option value="2">Austria</option>
+                                                                                <option value="47">Azerbaijan</option>
+                                                                                <option value="48">Bahamas</option>
+                                                                                <option value="49">Bahrain</option>
+                                                                                <option value="50">Bangladesh</option>
+                                                                                <option value="3">Belgium</option>
+                                                                                <option value="34">Bolivia</option>
+                                                                                <option value="4">Canada</option>
+                                                                                <option value="5">China</option>
+                                                                                <option value="16">Czech Republic
+                                                                                </option>
+                                                                                <option value="20">Denmark</option>
+                                                                                <option value="7">Finland</option>
+                                                                                <option value="8">France</option>
+                                                                                <option value="1">Germany</option>
+                                                                                <option value="9">Greece</option>
+                                                                                <option value="22">HongKong</option>
+                                                                                <option value="26">Ireland</option>
+                                                                                <option value="29">Israel</option>
+                                                                                <option value="10">Italy</option>
+                                                                                <option value="32">Ivory Coast</option>
+                                                                                <option value="11">Japan</option>
+                                                                                <option value="12">Luxemburg</option>
+                                                                                <option value="35">Mauritius</option>
+                                                                                <option value="13">Netherlands</option>
+                                                                                <option value="27">New Zealand</option>
+                                                                                <option value="31">Nigeria</option>
+                                                                                <option value="23">Norway</option>
+                                                                                <option value="14">Poland</option>
+                                                                                <option value="15">Portugal</option>
+                                                                                <option value="36">Romania</option>
+                                                                                <option value="25">Singapore</option>
+                                                                                <option value="37">Slovakia</option>
+                                                                                <option value="30">South Africa</option>
+                                                                                <option value="28">South Korea</option>
+                                                                                <option value="6">Spain</option>
+                                                                                <option value="18">Sweden</option>
+                                                                                <option value="19">Switzerland</option>
+                                                                                <option value="33">Togo</option>
+                                                                                <option value="17">United Kingdom
+                                                                                </option>
+                                                                                <option value="21">United States
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label> informcion adicional</label>
+                                                                            <textarea rows="3" cols="26"
+                                                                                name="additional_info"
+                                                                                class="form-control additional_info"></textarea>
+                                                                        </div>
+                                                                        <div class="form-group required">
+                                                                            <label>celular <sup>*</sup></label>
+                                                                            <input required type="number" name="mobile"
+                                                                                class="form-control mobile">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--/col-xs-12-->
+                                                                </div>
+                                                            </div>
+                                                            <!--/col-md-12-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="shipping_information">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h4>Complete su información básica para el envío del
+                                                                    artículo</h4>
+                                                                <hr>
+                                                                <div class="col-xs-12 col-sm-6">
+                                                                    <div class="form-group required">
+                                                                        <label>nombre <sup>*</sup> </label>
+                                                                        <input required type="text"
+                                                                            class="form-control firstName"
+                                                                            name="firstName" placeholder="nombre">
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>apellido<sup>*</sup> </label>
+                                                                        <input required type="text"
+                                                                            class="form-control lastName"
+                                                                            name="lastName" placeholder="apellido">
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>Email <sup>*</sup></label>
+                                                                        <input required type="email"
+                                                                            class="form-control email" name="email"
+                                                                            placeholder="Email">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>empreza </label>
+                                                                        <input type="text" class="form-control company"
+                                                                            placeholder="Company">
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>direccion <sup>*</sup> </label>
+                                                                        <input required type="text"
+                                                                            class="form-control address1"
+                                                                            placeholder="Address">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>direccion (Line 2) </label>
+                                                                        <input type="text"
+                                                                            class="form-control address_2"
+                                                                            placeholder="Address">
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>ciudad <sup>*</sup> </label>
+                                                                        <input required type="text"
+                                                                            class="form-control city" name="city"
+                                                                            placeholder="City">
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>estado <sup>*</sup> </label>
+                                                                        <select class="form-control state_info" required
+                                                                            name="state_info">
+                                                                            <option value="">Choose</option>
+                                                                            <option value="1">Alabama</option>
+                                                                            <option value="2">Alaska</option>
+                                                                            <option value="3">Arizona</option>
+                                                                            <option value="4">Arkansas</option>
+                                                                            <option value="5">California</option>
+                                                                            <option value="6">Colorado</option>
+                                                                            <option value="7">Connecticut</option>
+                                                                            <option value="8">Delaware</option>
+                                                                            <option value="53">District of Columbia
+                                                                            </option>
+                                                                            <option value="9">Florida</option>
+                                                                            <option value="10">Georgia</option>
+                                                                            <option value="11">Hawaii</option>
+                                                                            <option value="12">Idaho</option>
+                                                                            <option value="13">Illinois</option>
+                                                                            <option value="14">Indiana</option>
+                                                                            <option value="15">Iowa</option>
+                                                                            <option value="16">Kansas</option>
+                                                                            <option value="17">Kentucky</option>
+                                                                            <option value="18">Louisiana</option>
+                                                                            <option value="19">Maine</option>
+                                                                            <option value="20">Maryland</option>
+                                                                            <option value="21">Massachusetts</option>
+                                                                            <option value="22">Michigan</option>
+                                                                            <option value="23">Minnesota</option>
+                                                                            <option value="24">Mississippi</option>
+                                                                            <option value="25">Missouri</option>
+                                                                            <option value="26">Montana</option>
+                                                                            <option value="27">Nebraska</option>
+                                                                            <option value="28">Nevada</option>
+                                                                            <option value="29">New Hampshire</option>
+                                                                            <option value="30">New Jersey</option>
+                                                                            <option value="31">New Mexico</option>
+                                                                            <option value="32">New York</option>
+                                                                            <option value="33">North Carolina</option>
+                                                                            <option value="34">North Dakota</option>
+                                                                            <option value="35">Ohio</option>
+                                                                            <option value="36">Oklahoma</option>
+                                                                            <option value="37">Oregon</option>
+                                                                            <option value="38">Pennsylvania</option>
+                                                                            <option value="51">Puerto Rico</option>
+                                                                            <option value="39">Rhode Island</option>
+                                                                            <option value="40">South Carolina</option>
+                                                                            <option value="41">South Dakota</option>
+                                                                            <option value="42">Tennessee</option>
+                                                                            <option value="43">Texas</option>
+                                                                            <option value="52">US Virgin Islands
+                                                                            </option>
+                                                                            <option value="44">Utah</option>
+                                                                            <option value="45">Vermont</option>
+                                                                            <option value="46">Virginia</option>
+                                                                            <option value="47">Washington</option>
+                                                                            <option value="48">West Virginia</option>
+                                                                            <option value="49">Wisconsin</option>
+                                                                            <option value="50">Wyoming</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <!--col-xs-12-->
+                                                                <div class="col-xs-12 col-sm-6">
+                                                                    <div class="form-group required">
+                                                                        <label>Zip / Pcodigo postal <sup>*</sup>
+                                                                        </label>
+                                                                        <input required type="number"
+                                                                            class="form-control zip" name="zip"
+                                                                            placeholder="Zip / Postal Code">
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>pais <sup>*</sup> </label>
+                                                                        <select class="form-control country_info"
+                                                                            required aria-required="true"
+                                                                            name="country_info">
+                                                                            <option value="">Choose</option>
+                                                                            <option value="38">Algeria</option>
+                                                                            <option value="39">American Samoa</option>
+                                                                            <option value="40">Andorra</option>
+                                                                            <option value="41">Angola</option>
+                                                                            <option value="42">Anguilla</option>
+                                                                            <option value="43">Antigua and Barbuda
+                                                                            </option>
+                                                                            <option value="44">Argentina</option>
+                                                                            <option value="45">Armenia</option>
+                                                                            <option value="46">Aruba</option>
+                                                                            <option value="24">Australia</option>
+                                                                            <option value="2">Austria</option>
+                                                                            <option value="47">Azerbaijan</option>
+                                                                            <option value="48">Bahamas</option>
+                                                                            <option value="49">Bahrain</option>
+                                                                            <option value="50">Bangladesh</option>
+                                                                            <option value="3">Belgium</option>
+                                                                            <option value="34">Bolivia</option>
+                                                                            <option value="4">Canada</option>
+                                                                            <option value="5">China</option>
+                                                                            <option value="16">Czech Republic</option>
+                                                                            <option value="20">Denmark</option>
+                                                                            <option value="7">Finland</option>
+                                                                            <option value="8">France</option>
+                                                                            <option value="1">Germany</option>
+                                                                            <option value="9">Greece</option>
+                                                                            <option value="22">HongKong</option>
+                                                                            <option value="26">Ireland</option>
+                                                                            <option value="29">Israel</option>
+                                                                            <option value="10">Italy</option>
+                                                                            <option value="32">Ivory Coast</option>
+                                                                            <option value="11">Japan</option>
+                                                                            <option value="12">Luxemburg</option>
+                                                                            <option value="35">Mauritius</option>
+                                                                            <option value="13">Netherlands</option>
+                                                                            <option value="27">New Zealand</option>
+                                                                            <option value="31">Nigeria</option>
+                                                                            <option value="23">Norway</option>
+                                                                            <option value="14">Poland</option>
+                                                                            <option value="15">Portugal</option>
+                                                                            <option value="36">Romania</option>
+                                                                            <option value="25">Singapore</option>
+                                                                            <option value="37">Slovakia</option>
+                                                                            <option value="30">South Africa</option>
+                                                                            <option value="28">South Korea</option>
+                                                                            <option value="6">Spain</option>
+                                                                            <option value="18">Sweden</option>
+                                                                            <option value="19">Switzerland</option>
+                                                                            <option value="33">Togo</option>
+                                                                            <option value="17">United Kingdom</option>
+                                                                            <option value="21">United States</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>informacion adicional</label>
+                                                                        <textarea rows="3" cols="26"
+                                                                            name="additional_info"
+                                                                            class="form-control additional_info"></textarea>
+                                                                    </div>
+                                                                    <div class="form-group required">
+                                                                        <label>celular <sup>*</sup></label>
+                                                                        <input required type="number" name="mobile"
+                                                                            class="form-control mobile">
+                                                                    </div>
+                                                                </div>
+                                                                <!--/col-xs-12-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="shipping_method">
+                                                        <h4>seleccione metodo de envio</h4>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h5><b>envio gratis</b></h5>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="shippingMethod"
+                                                                            class="fradio success" checked="checked">
+                                                                        gratis $0
+                                                                    </label>
+                                                                </div>
+                                                                <h5><b>envio estandar</b></h5>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="shippingMethod"
+                                                                            class="fradio success">
+                                                                        envio estandar $10.00
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/col-md-12-->
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="checkout_payment">
+                                                        <h5>All transactions are securely encrypted</h5>
+                                                        <!--TAB START-->
+                                                        <div class="line-tabs bottom">
+                                                            <ul class="nav" role="tablist">
+                                                                <li class="active">
+                                                                    <a href="#tab25" role="tab" data-toggle="tab">Cash
+                                                                        On Delivery</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#tab26" role="tab"
+                                                                        data-toggle="tab">Paypal</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#tab27" role="tab"
+                                                                        data-toggle="tab">MasterCard</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane fade in active" id="tab25">
+
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="paymentMethod"
+                                                                            class="fradio success" checked="checked">
+                                                                        Cash On Delivery
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label>Your aditional comment here</label>
+                                                                    <textarea
+                                                                        class="form-control textarea-expandable"></textarea>
+                                                                </div>
+                                                                <!--/form-group-->
+
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="tos"
+                                                                            class="fcheck success">
+                                                                        I have read and agree to the <a
+                                                                            href="page-terms-of-condition.html">Terms &
+                                                                            Conditions</a>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="tab-pane fade" id="tab26">
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="paymentMethod"
+                                                                            class="fradio success">
+                                                                        Checkout with PayPal
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label>Your aditional comment here</label>
+                                                                    <textarea
+                                                                        class="form-control textarea-expandable"></textarea>
+                                                                </div>
+                                                                <!--/form-group-->
+
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="tos"
+                                                                            class="fcheck success">
+                                                                        I have read and agree to the <a
+                                                                            href="page-terms-of-condition.html">Terms &
+                                                                            Conditions</a>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="tab-pane fade" id="tab27">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Card Number</label>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    <input type="text"
+                                                                                        class="form-control"
+                                                                                        name="exampleInputCard"
+                                                                                        id="exampleInputCard"
+                                                                                        placeholder="Card Number">
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <input type="text"
+                                                                                        class="form-control col-md-4"
+                                                                                        name="exampleInputSecurity"
+                                                                                        id="exampleInputSecurity"
+                                                                                        placeholder="Security Code">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="exampleInputHolder">Card Holders
+                                                                                Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                name="exampleInputHolder"
+                                                                                id="exampleInputHolder"
+                                                                                placeholder="Card Holders Name">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label
+                                                                                for="exampleInputExpiration">Expiration</label>
+                                                                            <input type="text"
+                                                                                class="form-control date-picker"
+                                                                                name="exampleInputExpiration"
+                                                                                id="exampleInputExpiration"
+                                                                                placeholder="Expiration">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="exampleInputCsv">CSV</label>
+                                                                            <input type="text" class="form-control"
+                                                                                name="exampleInputCsv"
+                                                                                id="exampleInputCsv" placeholder="CSV">
+                                                                        </div>
+                                                                        <div class="checkbox col-md-12">
+                                                                            <label>
+                                                                                <input type="checkbox" name="tos"
+                                                                                    class="fcheck success">
+                                                                                I have read and agree to the <a
+                                                                                    href="">Terms & Conditions</a>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--TAB END-->
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="order_review">
+                                                        <section id="no-more-tables">
+                                                            <table
+                                                                class="table table-bordered table-striped table-condensed cf">
+                                                                <thead class="cf">
+                                                                    <tr>
+                                                                        <th style="width:16%">PRODUCTO</th>
+                                                                        <th style="width: 45%;">DETALLES</th>
+                                                                        <th style="width: 15%;">QNT</th>
+                                                                        <th class="numeric">DESCUENTO</th>
+                                                                        <th class="numeric">TOTAL</th>
+                                                                        <th>REMOVER</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td data-title="Product">
+                                                                            <img src="assets/images/products/1.jpg"
+                                                                                class="img-responsive" width="120"
+                                                                                alt="image">
+                                                                        </td>
+                                                                        <td data-title="Details">
+                                                                            <h4>
+                                                                                <a href="">PRDUCTO 2</a>
+                                                                            </h4>
+                                                                            <span class="size">VALOR</span>
+                                                                            <div class="price">
+                                                                                <span>$<span
+                                                                                        class="counter">1900</span></span>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td data-title="QNT"><input
+                                                                                id="prodcut-quantity3" type="text"
+                                                                                value="1" name="prodcut-quantity"
+                                                                                class="form-control"></td>
+                                                                        <td class="numeric" data-title="DISCOUNT">0</td>
+                                                                        <td class="numeric" data-title="TOTAL">
+                                                                            <span>$<span
+                                                                                    class="counter">1900</span></span>
+                                                                        </td>
+                                                                        <td data-title="REMOVE" class="text-center"><a
+                                                                                href="javascript:void(0)"
+                                                                                class="btn-remove-cart"><span
+                                                                                    class="glyphicon glyphicon-trash fa-2x fg-gray"></span></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td data-title="Product">
+                                                                            <img src="assets/images/products/3.jpg"
+                                                                                class="img-responsive" width="120"
+                                                                                alt="image">
+                                                                        </td>
+                                                                        <td data-title="Details">
+                                                                            <h4>
+                                                                                <a href="#">PRDUCTO 2</a>
+                                                                            </h4>
+                                                                            <span class="size">VALOR</span>
+                                                                            <div class="price">
+                                                                                <span>$<span
+                                                                                        class="counter">9000</span></span>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td data-title="QNT"><input
+                                                                                id="prodcut-quantity4" type="text"
+                                                                                value="1" name="prodcut-quantity"
+                                                                                class="form-control"></td>
+                                                                        <td class="numeric" data-title="DISCOUNT">0</td>
+                                                                        <td class="numeric" data-title="TOTAL">
+                                                                            <span>$<span
+                                                                                    class="counter">1900</span></span>
+                                                                        </td>
+                                                                        <td data-title="REMOVE" class="text-center"><a
+                                                                                href="javascript:void(0)"
+                                                                                class="btn-remove-cart"><span
+                                                                                    class="glyphicon glyphicon-trash fa-2x fg-gray"></span></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td data-title="Product">
+                                                                            <img src="assets/images/products/6.jpg"
+                                                                                class="img-responsive" width="120"
+                                                                                alt="image">
+                                                                        </td>
+                                                                        <td data-title="Details">
+                                                                            <h4>
+                                                                                <a
+                                                                                    href="page-ecommerce-view-product.html">Item
+                                                                                    Name 1</a>
+                                                                            </h4>
+                                                                            <span class="size">VALOR</span>
+                                                                            <div class="price">
+                                                                                <span>$<span
+                                                                                        class="counter">1000</span></span>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td data-title="QNT"><input
+                                                                                id="prodcut-quantity1" type="text"
+                                                                                value="1" name="prodcut-quantity"
+                                                                                class="form-control"></td>
+                                                                        <td class="numeric" data-title="DISCOUNT">0</td>
+                                                                        <td class="numeric" data-title="TOTAL">
+                                                                            <span>$<span
+                                                                                    class="counter">1000</span></span>
+                                                                        </td>
+                                                                        <td data-title="REMOVE" class="text-center"><a
+                                                                                href="javascript:void(0)"
+                                                                                class="btn-remove-cart"><span
+                                                                                    class="glyphicon glyphicon-trash fa-2x fg-gray"></span></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td data-title="Product">
+                                                                            <img src="assets/images/products/7.jpg"
+                                                                                class="img-responsive" width="120"
+                                                                                alt="image">
+                                                                        </td>
+                                                                        <td data-title="Details">
+                                                                            <h4>
+                                                                                <a href="">X NUM </a>
+                                                                            </h4>
+                                                                            <span class="size">VALOR</span>
+                                                                            <div class="price">
+                                                                                <span>$<span
+                                                                                        class="counter">1000</span></span>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td data-title="QNT"><input
+                                                                                id="prodcut-quantity2" type="text"
+                                                                                value="1" name="prodcut-quantity"
+                                                                                class="form-control"></td>
+                                                                        <td class="numeric" data-title="DISCOUNT">0</td>
+                                                                        <td class="numeric" data-title="TOTAL">
+                                                                            <span>$<span
+                                                                                    class="counter">1000</span></span>
+                                                                        </td>
+                                                                        <td data-title="REMOVE" class="text-center"><a
+                                                                                href="javascript:void(0)"
+                                                                                class="btn-remove-cart"><span
+                                                                                    class="glyphicon glyphicon-trash fa-2x fg-gray"></span></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </section>
+                                                        <!--/no-more-tables-->
+
+                                                    </div>
+                                                    <ul class="pager wizard">
+                                                        <li class="previous"><a href="#" class="btn btn-default"><i
+                                                                    class="fa fa-long-arrow-left"></i> Previous</a></li>
+                                                        <li class="next"><a href="#" class="btn btn-default">Next <i
+                                                                    class="fa fa-long-arrow-right"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!--/#wizard1-->
+                                        <!--WIZARD END-->
+
+
+                                        <div>
+                                            <a href="page-ecommerce-products.html"
+                                                class="btn btn-silver btn-flat btn-raised">
+                                                <i class="fa fa-arrow-left"></i> &nbsp; Continue shopping
+                                            </a>
+
+                                            <button type="submit" class="btn btn-green btn-flat btn-raised pull-right">
+                                                <i class="fa fa-undo"></i> &nbsp;
+                                                Update cart
+                                            </button>
+                                        </div>
+
+
+                                    </div>
+                                    <!--/ecommerce-content-->
+
+
+
+                                </div>
+                                <!--/col-md-8-->
+
+                                <div class="col-md-4">
+
+                                    <a href="javascript:void(0)" class="btn btn-green btn-flat btn-block"><span><i
+                                                class="fa fa-check"></i> <b>Confirm Order</b></span></a>
+
+                                    <div class="c_panel sidebar bg-white padding-25 margin-top-15">
+
+                                        <div class="table-responsive about-table">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Total products</td>
+                                                        <td class="price"><b>$<span class="counter">3000</span></b></td>
+                                                    </tr>
+                                                    <tr style="">
+                                                        <td>Shipping</td>
+                                                        <td class="price"><span class="text-success"><b>Free
+                                                                    shipping!</b></span></td>
+                                                    </tr>
+                                                    <tr class="cart-total-price ">
+                                                        <td>Total (tax excl.)</td>
+                                                        <td class="price"><b>$<span class="counter">3000</span></b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total tax</td>
+                                                        <td class="price" id="total-tax"><b>$0.00</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Total </td>
+                                                        <td class=" site-color" id="total-price"><b>$<span
+                                                                    class="counter">3000</span></b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="input-group" style="width:100%">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Coupon Code">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn btn-success"
+                                                                        type="button">Apply</button>
+                                                                </span>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+
+                                        </div>
+                                        <!--/table-responsive-->
+
+                                    </div>
+                                    <!--/sidebar-->
+                                </div>
+                                <!--/col-md-4-->
+
+                            </div>
+                            <!--/row-->
+
+
+                        </div>
+                        <!--/page-ecommerce-->
+
+
+                    </div>
+                    <!--/col-md-12-->
+
+                </div>
+                <!--/row-->
+                <!--======== END ECOMMERCE ========-->
+
+
+            </section>
+        </section>
+        <!--======== Main Content End ========-->
+
+
+
+
+    </section>
+    <!--/.container-->
+
+    <script src="../../../assets/js/global-plugins.js"></script>
+    <!-- <script src="../../../assets/js/jquery.js"></script>
+    <script src="../../../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../../assets/vendors/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../../../assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../../assets/vendors/jquery-easing/jquery.easing.1.3.js"></script>
+    <script src="../../../assets/vendors/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../assets/vendors/jquery/dcjqaccordion.2.7.js"></script>
+    <script src="../../../assets/vendors/jquery/scrollTo.min.js"></script>
+    <script src="../../../assets/vendors/jquery/slimscroll.js"></script>
+    <script src="../../../assets/vendors/jquery/nicescroll.js"></script>
+    <script src="../../../assets/vendors/progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="../../../assets/vendors/counter/waypoints.min.js" type="text/javascript" ></script>
+    <script src="../../../assets/vendors/counter/jquery.counterup.min.js" type="text/javascript" ></script>
+    <script src="../../../assets/vendors/jquery-icheck/icheck.min.js"></script>
+    <script src="../../../assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="../../../assets/vendors/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="../../../assets/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script src="../../../assets/vendors/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+    <script src="../../../assets/vendors/summernote/summernote.min.js"></script>
+    <script src="../../../assets/vendors/jquery.autosize/jquery.autosize.js"></script>
+    <script src="../../../assets/vendors/jquery.multi-select/js/jquery.multi-select.js"></script>
+    <script src="../../../assets/vendors/jquery.multi-select/js/jquery.quicksearch.js"></script>
+    <script src="../../../assets/vendors/typeahead/js/typeahead.bundle.js"></script>
+    <script src="../../../assets/vendors/typeahead/js/handlebars.min.js"></script>
+    <script src="../../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="../../../assets/vendors/select2/select2.min.js"></script>
+    <script src="../../../assets/vendors/bootstrap-star-rating/js/star-rating.min.js"></script>
+    <script src="../../../assets/vendors/bootstrap-fileupload/js/bootstrap-fileupload.js"></script>
+    <script src="../../../assets/vendors/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+    <script src="../../../assets/vendors/jquery.validate/jquery.validate.min.js"></script>
+    <script src="../../../assets/vendors/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="../../../assets/vendors/dropzone/dropzone.min.js"></script>
+    <script src="../../../assets/vendors/plupload/js/plupload.full.min.js"></script>
+    <script src="../../../assets/vendors/plupload/js/jquery.plupload.queue/jquery.plupload.queue.min.js"></script>
+    <script src="../../../assets/vendors/x-editable/bootstrap3-editable/js/bootstrap-editable.js"></script>
+    <script src="../../../assets/vendors/x-editable/inputs-ext/address/address.js"></script>
+    <script src="../../../assets/vendors/x-editable/inputs-ext/typeaheadjs/typeaheadjs.js"></script>
+    <script src="../../../assets/vendors/owl-carousel/owl.carousel.js"></script>
+    <script src="../../../assets/vendors/magnific-popup/js/jquery.magnific-popup.js"></script>
+    <script src="../../../assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../assets/vendors/moment.min.js"></script>
+    <script src="../../../assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="../../../assets/vendors/raphael-min.js" charset="utf-8" ></script>
+    <script src="../../../assets/vendors/sweetalert/sweetalert.min.js"></script>
+    <script src="../../../assets/vendors/word-rotator/jquery.wordrotator.min.js"></script>
+    <script src="../../../assets/vendors/wow-animations/js/wow.min.js"></script>
+    <script src="../../../assets/vendors/rwd-table/js/rwd-table.min.js?v=5.0.3"></script>
+    <script src="../../../assets/vendors/jqueryui.sortable.animation/jquery.ui.sortable-animation.js"></script>
+    <script src="../../../assets/vendors/tooltipster/js/jquery.tooltipster.js" type="text/javascript" ></script>
+    <script src="../../../assets/vendors/dropdowns-enhancement/js/dropdowns-enhancement.min.js" type="text/javascript"></script>
+    <script src="../../../assets/vendors/jquery-notific8/jquery.notific8.js" type="text/javascript"></script>
+    <script src="../../../assets/vendors/date.js"></script>
+    <script src="../../../assets/vendors/pogo-slider/js/jquery.pogo-slider.min.js" type="text/javascript" ></script>
+    <script src="../../../assets/vendors/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript" ></script>
+    <script src="../../../vendors/nestable/jquery.nestable.js" type="text/javascript" ></script>
+    <script src="../../../assets/vendors/bstooltip/bstooltip.js"></script> -->
+
+    <!--##################################################################################
+    #
+    # COMMON SCRIPT FOR THIS PAGE
+    #
+    ##################################################################################-->
+
+    <!--common script init for all pages-->
+    <script src="../../../assets/js/theme.js" type="text/javascript"></script>
+
+    <!-- For Form Elements Page Only -->
+    <script src="../../../assets/js/forms.js"></script>
+    <script src="../../../assets/js/form-validation.js"></script>
+    <script src="../../../assets/js/form-wizard.js"></script>
+    <script src="../../../assets/js/form-plupload.js"></script>
+    <script src="../../../assets/js/form-x-editable.js"></script>
+
+
+    <!--common script init for all pages-->
+    <script src="../../../assets/js/ecommerce.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            new WOW().init();
+
+            App.initPage();
+            App.initLeftSideBar();
+            App.initCounter();
+            App.initNiceScroll();
+            App.initPanels();
+            App.initProgressBar();
+            App.initSlimScroll();
+            App.initNotific8();
+            App.initTooltipster();
+            App.initStyleSwitcher();
+            App.initMenuSelected();
+            App.initRightSideBar();
+            App.initSummernote();
+            App.initAccordion();
+            App.initModal();
+            App.initPopover();
+
+        });
+    </script>
+
+
+</body>
+
+</html>
+
+<!--===== Footer End ========-->
